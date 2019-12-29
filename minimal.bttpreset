@@ -154,7 +154,7 @@
     "showOtherTriggersTab" : true,
     "BSTSnapAreaDefaultPictoDistanceFromLeft" : 0.10000000149011612
   },
-  "BTTPresetUUID" : "531B89AC-2BA5-416A-BF8E-95EFDFD93219",
+  "BTTPresetUUID" : "035A9ACB-91CC-40E3-A8F6-718082AAB2EF",
   "BTTPresetContent" : [
     {
       "BTTAppBundleIdentifier" : "BT.G",
@@ -236,8 +236,8 @@
           "BTTDisplayOrder" : 0,
           "BTTMergeIntoTouchBarGroups" : 0,
           "BTTTriggerConfig" : {
-            "BTTTouchBarHideCover" : 0,
-            "BTTTouchBarItemPadding" : -10,
+            "BTTTouchBarButtonCornerRadius" : 6,
+            "BTTTouchBarFreeSpaceAfterButton" : 5,
             "BTTTouchBarBringPlayerToFront" : 0,
             "BTTTouchBarButtonColor" : "0.000000, 0.000000, 0.000000, 255.000000",
             "BTTTouchBarEmojiHideBackButton" : false,
@@ -254,13 +254,13 @@
             "BTTTBWidgetWidth" : 400,
             "BTTTouchBarDefaultPlayer" : 0,
             "BTTTouchBarItemIconWidth" : 22,
-            "BTTTouchBarShellScriptString" : "sh ~\/btt-minimal\/wifi.sh",
+            "BTTTouchBarShellScriptString" : "sh ~\/btt-minimal\/scripts\/wifi.sh",
             "BTTTouchBarHideWhenNoPlayer" : false,
             "BTTTouchBarButtonFontSize" : 7,
             "BTTTouchBarButtonName" : "Wifi status",
+            "BTTTouchBarHideCover" : 0,
             "BTTTouchBarOnlyShowIcon" : false,
-            "BTTTouchBarButtonCornerRadius" : 6,
-            "BTTTouchBarFreeSpaceAfterButton" : 5
+            "BTTTouchBarItemPadding" : -10
           }
         },
         {
@@ -328,8 +328,8 @@
           "BTTDisplayOrder" : 0,
           "BTTMergeIntoTouchBarGroups" : 0,
           "BTTTriggerConfig" : {
-            "BTTTouchBarAppleScriptString" : "do shell script \"pmset -g batt | grep InternalBattery | column -t\"\rset x to the result\rset percentage to word 6 of x\rset state to word 7 of x\r\rif state is not \"discharging\" then\r\treturn \"[charging \" & percentage & \"%]\"\rend if\r\rreturn \"[\" & percentage & \"%]\"\r",
-            "BTTTouchBarItemPadding" : 0,
+            "BTTTouchBarButtonCornerRadius" : 6,
+            "BTTTouchBarFreeSpaceAfterButton" : 5,
             "BTTTouchBarButtonColor" : "0.000000, 0.000000, 0.000000, 255.000000",
             "BTTTouchBarItemPlacement" : 2,
             "BTTTouchBarAppleScriptStringRunOnInit" : true,
@@ -343,12 +343,12 @@
             "BTTTBWidgetWidth" : 400,
             "BTTTouchBarColorRegex" : "",
             "BTTTouchBarItemIconWidth" : 22,
-            "BTTTouchBarShellScriptString" : "sh ~\/btt-minimal\/battery.sh",
+            "BTTTouchBarShellScriptString" : "sh ~\/btt-minimal\/scripts\/battery.sh",
             "BTTTouchBarButtonFontSize" : 12,
             "BTTTouchBarButtonName" : "Battery status",
+            "BTTTouchBarAppleScriptString" : "do shell script \"pmset -g batt | grep InternalBattery | column -t\"\rset x to the result\rset percentage to word 6 of x\rset state to word 7 of x\r\rif state is not \"discharging\" then\r\treturn \"[charging \" & percentage & \"%]\"\rend if\r\rreturn \"[\" & percentage & \"%]\"\r",
             "BTTTouchBarOnlyShowIcon" : false,
-            "BTTTouchBarButtonCornerRadius" : 6,
-            "BTTTouchBarFreeSpaceAfterButton" : 5
+            "BTTTouchBarItemPadding" : 0
           }
         },
         {
