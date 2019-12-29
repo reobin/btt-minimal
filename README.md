@@ -1,2 +1,2 @@
-# btt-minimal-preset
+# BTT minimal
 BetterTouchTool minimal preset
